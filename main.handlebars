@@ -1,0 +1,66 @@
+<h1>Lista de posts:</h1>
+<style>
+    h2{
+        text-align:center;
+        color: purple;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+        
+    }
+    p{
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+    hr{
+        background-color:rgb(248, 5, 5);
+    }
+    #tes{
+        text-align: center;
+    }
+    a{
+        font-size: 30px;
+        text-align: center;
+        background-color: purple;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 5px 2px;
+        
+
+    }
+    a:hover{
+        background-color: white;
+        color: purple;
+    }
+    h1{
+        color: white;;
+    }
+    .conteudo:hover{
+        color: white;
+    }
+    h2:hover{
+        background-color: rgb(133, 195, 211);
+        width: 50%;
+        text-align: center;
+    }
+   
+</style>
+
+{{#each posts}}
+
+    <h2>{{titulo}}</h2>
+    <p>{{email}}</p>
+    <p>{{idade}}</p>
+    <hr>
+
+
+{{/each}}
+
+<div id="tes">
+    <a href="http://localhost:8081/cad">Cadastrar</a>
+</div>
+
+
+
